@@ -1,0 +1,2 @@
+SELECT count(1) as CONTAGEM
+FROM %s
