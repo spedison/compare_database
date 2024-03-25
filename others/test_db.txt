@@ -1,0 +1,21 @@
+2024-03-24 13:50:12.014948 - Inserts are done with 3074904 records
+2024-03-24 13:50:12.014963 Insert 2307098 register(s) in table nomes_clientes_1
+2024-03-24 13:50:12.014972 Insert 2305117 register(s) in table nomes_clientes_2
+2024-03-24 13:50:12.014979 Insert 2306450 register(s) in table nomes_clientes_3
+2024-03-24 13:50:12.014986 Insert 2306050 register(s) in table nomes_clientes_4
+2024-03-24 13:50:12.014992 Insert 2304330 register(s) in table nomes_clientes_5
+2024-03-24 13:50:12.014999 Insert 2305770 register(s) in table nomes_clientes_6
+2024-03-24 13:50:12.015005 Insert 2305223 register(s) in table nomes_clientes_7
+2024-03-24 13:50:12.015011 Insert 2307113 register(s) in table nomes_clientes_8
+2024-03-24 13:50:12.015016 Insert 2305689 register(s) in table nomes_clientes_9
+2024-03-24 13:50:12.015023 Insert 2306060 register(s) in table nomes_clientes_10
+2024-03-24 13:50:12.015029 Insert 2306638 register(s) in table nomes_clientes_11
+2024-03-24 13:50:12.015035 Insert 2305566 register(s) in table nomes_clientes_12
+2024-03-24 13:50:12.015040 Insert 2308347 register(s) in table nomes_clientes_13
+2024-03-24 13:50:12.015046 Insert 2306419 register(s) in table nomes_clientes_14
+2024-03-24 13:50:12.015052 Insert 2305718 register(s) in table nomes_clientes_15
+2024-03-24 13:50:12.015059 Insert 2306300 register(s) in table nomes_clientes_16
+2024-03-24 13:50:12.015064 Insert 2306606 register(s) in table nomes_clientes_17
+2024-03-24 13:50:12.015071 Insert 2306027 register(s) in table nomes_clientes_18
+2024-03-24 13:50:12.015076 Insert 2306124 register(s) in table nomes_clientes_19
+2024-03-24 13:50:12.015082 Insert 2306915 register(s) in table nomes_clientes_20
