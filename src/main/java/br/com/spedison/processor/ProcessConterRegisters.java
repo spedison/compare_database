@@ -1,7 +1,8 @@
-package br.com.spedison;
+package br.com.spedison.processor;
 
 import br.com.spedison.helper.ConnectionHelper;
 import br.com.spedison.helper.QueryHelper;
+import br.com.spedison.vo.TableForAnalysis;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -48,10 +49,10 @@ public class ProcessConterRegisters implements Runnable {
             Statement stSrc = connSrc.createStatement();
             ResultSet rsSrc = stSrc.executeQuery(sql);
             if (Objects.nonNull(rsSrc) && rsSrc.next()) {
-                itemForAnalysis.numberOfRegistersSrc = rsSrc.getLong(1);
+                itemForAnalysis.setNumberOfRegistersSrc(rsSrc.getLong(1));
                 if (complete) {
-                    itemForAnalysis.lastIdSrc = rsSrc.getLong(2);
-                    itemForAnalysis.firstIdSrc = rsSrc.getLong(3);
+                    itemForAnalysis.setLastIdSrc(rsSrc.getLong(2));
+                    itemForAnalysis.setFirstIdSrc(rsSrc.getLong(3));
                 }
             }
             connSrc.close();
@@ -62,17 +63,17 @@ public class ProcessConterRegisters implements Runnable {
                     connSrc.close();
                 } catch (SQLException sqle) {
                 }
-            itemForAnalysis.numberOfRegistersSrc = -1;
+            itemForAnalysis.setNumberOfRegistersSrc(-1);
         }
 
         try {
             Statement stDst = connDst.createStatement();
             ResultSet rsDst = stDst.executeQuery(sql);
             if (Objects.nonNull(rsDst) && rsDst.next()) {
-                itemForAnalysis.numberOfRegistersDst = rsDst.getLong(1);
+                itemForAnalysis.setNumberOfRegistersDst(rsDst.getLong(1));
                 if (complete) {
-                    itemForAnalysis.lastIdDst = rsDst.getLong(2);
-                    itemForAnalysis.firsIdDst = rsDst.getLong(3);
+                    itemForAnalysis.setLastIdDst(rsDst.getLong(2));
+                    itemForAnalysis.setFirsIdDst(rsDst.getLong(3));
                 }
             }
             connDst.close();
@@ -83,7 +84,7 @@ public class ProcessConterRegisters implements Runnable {
                     connDst.close();
                 } catch (SQLException sqle) {
                 }
-            itemForAnalysis.numberOfRegistersDst = -1;
+            itemForAnalysis.setNumberOfRegistersDst(-1);
         }
         itemForAnalysis.setExecuted();
     }

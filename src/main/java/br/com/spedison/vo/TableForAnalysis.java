@@ -1,4 +1,4 @@
-package br.com.spedison;
+package br.com.spedison.vo;
 
 import java.util.Objects;
 import java.util.concurrent.atomic.AtomicBoolean;

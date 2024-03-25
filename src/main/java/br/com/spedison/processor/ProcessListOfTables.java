@@ -1,14 +1,15 @@
-package br.com.spedison;
+package br.com.spedison.processor;
 
 import br.com.spedison.helper.ConnectionHelper;
 import br.com.spedison.helper.QueryHelper;
+import br.com.spedison.vo.TableForAnalysis;
+import br.com.spedison.vo.TableForAnalysisList;
 
 import java.sql.*;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
-import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
@@ -29,7 +30,7 @@ public class ProcessListOfTables {
             throw new RuntimeException("Database types must have be equals");
     }
 
-    TableForAnalysisList makeListOfTableForAnalysis() throws SQLException {
+    public TableForAnalysisList makeListOfTableForAnalysis() throws SQLException {
         TableForAnalysisList ret = new TableForAnalysisList();
         QueryHelper qr = new QueryHelper(connectionHelperDst.getDatabaseTypeName(), "query_list_tables");
         String sql = qr.loadQuery();
